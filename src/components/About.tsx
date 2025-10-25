@@ -5,34 +5,30 @@ const About = () => {
   return (
     <section id="about" className="py-20 px-4 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900">
       <div className="max-w-7xl mx-auto">
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-              OUR MISSION
+              Project Management Construction Firm
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              Ever-since inception, MBPL never looked back and today we have what we are.
-              This has resulted due to close interaction (management) between management and each
-              employee even at the lowest level involved and developed a corporate culture where each and
-              every employee feels like they are working for their own organization.
+            <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+              ULTRABUILD began as a civil and mechanical works contractor in 2014. Over the years, the company has undertaken many challenging projects and accumulated skills, know-how, and experience in design and build solutions, project management services, and other related engineering works.
             </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              the coming decade, we look forward to being one of the upcoming premier infrastructure
-              companies with projects in all vital sectors of our Country. We hope to take forward not only our
-              organization but also to contribute to the growth of our Nation alongwith it as we truly believe that
-              infrastructure is the backbone of the Nation that we plan to build.
-              We believe that the future holds great opportunities for us in the domestic markets. With our
-              foresightedness, excellent strategic management and future prospects we shall be able to
-              transform opportunities to constructive outcomes.
+            <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+              Our objective is to provide our clients with an &quot;I am assured&quot; experience when we are chosen to execute their projects. Our emphasis on clear communication and follow-through procedures ensures that clients&apos; objectives are top priority in the planning and execution of all our processes.
             </p>
-            <div className="grid grid-cols-2 gap-6 mt-8">
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
-                <h4 className="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">Best Wishes</h4>
-                <p className="text-gray-600 dark:text-gray-400">ATUL MEHROTRA
-                  (Managing Director)</p>
-              </div>
-            </div>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+              Our project management and execution philosophy is:
+            </p>
+            <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+              <li>Create detailed schedule and resource plan to meet clients’ project objectives.</li>
+              <li>Communicate clearly with all project stakeholders.</li>
+              <li>Track project progress and fine-tune deviations.</li>
+              <li>Supervise closely on quality of work done.</li>
+              <li>Complete and commission the project on time.</li>
+            </ul>
+            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              We take pride in our delivery, thus our clients can always be assured that only the most experienced and qualified people are serving them all the time.
+            </p>
           </div>
           <div className="relative">
             <div className="rounded-xl w-full h-96 md:h-[500px] overflow-hidden">

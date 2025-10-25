@@ -4,6 +4,9 @@ import About from "../components/About";
 import Achivement from "../components/Achivement";
 import BoardoffDirectore from "../components/BoardoffDirectore";
 import Clintimage from "../components/Clintimage";
+import Project from "../components/Project";
+import Gallery from "../components/Gallery";
+import Contact from "../components/Contact";
 
 export default function Home() {
   useEffect(() => {
@@ -13,7 +16,8 @@ export default function Home() {
         { id: 'about', top: 0 },
         { id: 'achievement', top: 0 },
         { id: 'boardofdirectore', top: 0 },
-        { id: 'clintimage', top: 0 }
+        { id: 'financial', top: 0 }, // Updated ID to match Clintimage component
+        { id: 'contact', top: 0 }
       ];
       
       // Calculate section positions
@@ -55,6 +59,9 @@ export default function Home() {
       <Achivement />
       <BoardoffDirectore />
       <Clintimage />
+      <Project />
+      <Gallery />
+      <Contact />
     </div>
   );
 }
