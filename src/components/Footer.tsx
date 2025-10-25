@@ -1,5 +1,5 @@
 import React from "react";
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   const quickLinks = [
@@ -43,23 +43,64 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold text-white mb-6">Contact Us</h4>
-            <ul className="space-y-4">
+            <ul className="space-y-6">
               <li>
                 <h5 className="font-semibold text-white mb-2">Corporate Office:</h5>
                 <div className="flex items-start">
                   <MapPin size={20} className="text-indigo-400 mt-1 mr-3 flex-shrink-0" />
-                  <span>9 Industrial Estate, Rewa Road, Satna - 485001 (MP)</span>
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=9+Industrial+Estate,+Rewa+Road,+Satna+-+485001+(MP)" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-indigo-400 transition-colors"
+                  >
+                    9 Industrial Estate, Rewa Road, Satna - 485001 (MP)
+                  </a>
                 </div>
-                <div className="flex items-center mt-2">
-                  <Phone size={20} className="text-indigo-400 mr-3 flex-shrink-0" />
-                  <span>Tel: 07672 - 250370, 251629, Fax: 07672 - 250368</span>
+                <div className="flex flex-col sm:flex-row sm:items-center mt-2 space-y-2 sm:space-y-0">
+                  <div className="flex items-center">
+                    <Phone size={20} className="text-indigo-400 mr-3 flex-shrink-0" />
+                    <a 
+                      href="tel:07672250370" 
+                      className="hover:text-indigo-400 transition-colors"
+                    >
+                      Tel: 07672 - 250370
+                    </a>
+                  </div>
+                  <span className="sm:mx-2 hidden sm:block">|</span>
+                  <a 
+                    href="tel:07672251629" 
+                    className="hover:text-indigo-400 transition-colors sm:ml-2"
+                  >
+                    251629
+                  </a>
+                  <span className="sm:mx-2 hidden sm:block">|</span>
+                  <a 
+                    href="fax:07672250368" 
+                    className="hover:text-indigo-400 transition-colors sm:ml-2"
+                  >
+                    Fax: 07672 - 250368
+                  </a>
                 </div>
-                <div className="flex items-center mt-2">
-                  <Mail size={20} className="text-indigo-400 mr-3 flex-shrink-0" />
-                  <span>E-mail: mbplsatna@yahoo.com, info@mehrotrabuildcon.com</span>
+                <div className="flex flex-col sm:flex-row sm:items-center mt-2 space-y-2 sm:space-y-0">
+                  <div className="flex items-center">
+                    <Mail size={20} className="text-indigo-400 mr-3 flex-shrink-0" />
+                    <a 
+                      href="mailto:mbplsatna@yahoo.com" 
+                      className="hover:text-indigo-400 transition-colors"
+                    >
+                      mbplsatna@yahoo.com
+                    </a>
+                  </div>
+                  <span className="sm:mx-2 hidden sm:block">,</span>
+                  <a 
+                    href="mailto:info@mehrotrabuildcon.com" 
+                    className="hover:text-indigo-400 transition-colors sm:ml-2"
+                  >
+                    info@mehrotrabuildcon.com
+                  </a>
                 </div>
               </li>
-          
             </ul>
           </div>
         </div>

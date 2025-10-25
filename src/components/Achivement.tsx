@@ -60,7 +60,7 @@ const Achivement = () => {
           </p>
 
           <p>
-            The company has also ventured into the <strong>Real Estate</strong> business under the name and style of <em>"Emerald Greens"</em>.
+            The company has also ventured into the <strong>Real Estate</strong> business under the name and style of <em>&quot;Emerald Greens&quot;</em>.
             Furthermore, its sister concern, <strong>M/s N.K. Industries</strong>, is actively engaged in the logistics sector, handling
             transportation of fly ash, cement, and other bulk materials.
           </p>
