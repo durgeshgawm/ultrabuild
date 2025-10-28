@@ -29,6 +29,9 @@ const BoardoffDirectore = () => {
             <li>Hydra 14 MT – 2 Nos.</li>
             <li>Rolling and Bending Machine – 1 No.</li>
             <li>MS Pipe and Scaffoldings</li>
+            <li>R210 HYDRAULIC EXCAVATOR</li>
+            <li>CRUSHER PLANT</li>
+            <li>CONCRETE BATCHING PLANT</li>
           </ul>
         </div>
       </div>

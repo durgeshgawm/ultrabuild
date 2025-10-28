@@ -1,12 +1,14 @@
-"use client";
 import React from "react";
 
-export default function ProjectPage() {
+const Project: React.FC = () => {
   const currentProjects = [
     { title: "Construction of Minor Bridge and other allied works at West-Central Railway division", },
     { title: "Main Civil works for FGD Package at NTPC Korba under BHEL", },
     { title: "Fabrication and Erection of Open Web Girders at West-Central Railway Division in Lalitpur-Singrauli Railway Line", },
     { title: "Testing of 760mm and 600 mm dia test pile at FGD Package at NTPC Korba under BHEL",},
+    { title: "Construction of Residential Quarters at Karhi Village, District Satna for West-Central Railway division",},
+    { title: "Supply of Ballast Aggregates for Railway Work. Description: Supply of ballast aggregates as per approved sample, suitable for Railway works. The scope of work included procurement, stacking, transportation, and unloading of material from our crusher to VEDANTA BALCO site, Chhattisgarh"},
+    { title: "Shuttering, Steel Bending & Binding Work at BHEL–NTPC, Korba (C.G.) Description: Execution of civil and structural works including steel cutting, bending & binding, shuttering, concrete pouring, bolt fixing, and supply of skilled and unskilled manpower at BHEL–NTPC site, Korba, Chhattisgarh.",},
   ];
 
   const completedProjects = [
@@ -21,30 +23,33 @@ export default function ProjectPage() {
   ];
 
   return (
-    <div className="min-h-screen py-20 px-4 bg-gradient-to-br from-gray-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900">
+    <section
+      id="project"
+      className="py-20 px-4 bg-gradient-to-br from-gray-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900"
+    >
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             CURRENT & COMPLETED PROJECTS
-          </h1>
+          </h2>
           <div className="w-24 h-1 bg-indigo-600 mx-auto rounded"></div>
         </div>
 
         {/* Current Projects */}
         <div className="mb-12">
-          <h2 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-6">
+          <h3 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-6">
             Current Projects
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {currentProjects.map((project, index) => (
               <div
                 key={index}
                 className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow duration-300"
               >
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                   {project.title}
-                </h3>
+                </h4>
               </div>
             ))}
           </div>
@@ -52,23 +57,25 @@ export default function ProjectPage() {
 
         {/* Completed Projects */}
         <div>
-          <h2 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-6">
+          <h3 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-6">
             Completed Projects
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {completedProjects.map((project, index) => (
               <div
                 key={index}
                 className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow duration-300"
               >
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
                   {project.title}
-                </h3>
+                </h4>
               </div>
             ))}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default Project;

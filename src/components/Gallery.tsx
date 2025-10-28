@@ -6,43 +6,35 @@ const Gallery = () => {
   const projects = [
     {
       id: 1,
-      category: "industrial",
-      image: "/gallery.JPEG"
+      image: "/image1.png"
     },
     {
       id: 2,
-      category: "industrial",
-      image: "/gallery.JPEG"
+      image: "/image2.png"
     },
     {
       id: 3,
-      category: "infrastructure",
-      image: "/gallery.JPEG"
+      image: "/image3.png"
     },
     {
       id: 4,
-      category: "industrial",
-      image: "/gallery.JPEG"
+      image: "/image4.png"
     },
     {
       id: 5,
-      category: "urban",
-      image: "/gallery.JPEG"
+      image: "/image5.png"
     },
     {
       id: 6,
-      category: "infrastructure",
-      image: "/gallery.JPEG"
+      image: "/image6.png"
     },
     {
       id: 7,
-      category: "industrial",
-      image: "/gallery.JPEG"
+      image: "/image7.png"
       },
     {
       id: 8,
-      category: "urban",
-      image: "/gallery.JPEG"
+      image: "/image8.png"
     },
   ];
 
@@ -66,7 +58,7 @@ const Gallery = () => {
               <div className="relative w-full h-64">
                 <Image
                   src={project.image}
-                  alt={`${project.category} project`}
+                  alt={`$project`}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

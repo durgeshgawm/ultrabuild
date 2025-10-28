@@ -6,6 +6,9 @@ const Project: React.FC = () => {
     { title: "Main Civil works for FGD Package at NTPC Korba under BHEL", },
     { title: "Fabrication and Erection of Open Web Girders at West-Central Railway Division in Lalitpur-Singrauli Railway Line", },
     { title: "Testing of 760mm and 600 mm dia test pile at FGD Package at NTPC Korba under BHEL",},
+    { title: "Construction of Residential Quarters at Karhi Village, District Satna for West-Central Railway division",},
+    { title: "Supply of Ballast Aggregates for Railway Work. Description: Supply of ballast aggregates as per approved sample, suitable for Railway works. The scope of work included procurement, stacking, transportation, and unloading of material from our crusher to VEDANTA BALCO site, Chhattisgarh"},
+    { title: "Shuttering, Steel Bending & Binding Work at BHEL–NTPC, Korba (C.G.) Description: Execution of civil and structural works including steel cutting, bending & binding, shuttering, concrete pouring, bolt fixing, and supply of skilled and unskilled manpower at BHEL–NTPC site, Korba, Chhattisgarh.",},
   ];
 
   const completedProjects = [

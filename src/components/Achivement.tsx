@@ -16,15 +16,19 @@ const Achivement = () => {
         {/* Vision & Mission */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
-            <h3 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4">Our Vision</h3>
+            <h3 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4">🌟Our Vision</h3>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              To be a respectable firm delivering beyond expectation always.
+              To be a leading construction firm recognized for excellence, innovation, and integrity — building a better tomorrow through sustainable and high-quality infrastructure.
             </p>
           </div>
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
-            <h3 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4">Our Mission</h3>
+            <h3 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4">🎯Our Mission</h3>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              To procure projects at competitive pricing, provide safe working conditions, and deliver quality work within a reasonable time frame.
+              To deliver superior construction services by:
+              Ensuring quality workmanship and timely completion.
+              Maintaining the highest standards of safety and professionalism.
+              Building long-term relationships with clients through trust and transparency.
+              Continuously improving through modern technology and skilled workforce.
             </p>
           </div>
         </div>

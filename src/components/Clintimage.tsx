@@ -8,9 +8,11 @@ const Clintimage = () => {
     { year: "2017-18", turnover: 457 },
     { year: "2018-19", turnover: 389 },
     { year: "2019-20", turnover: 525 },
-    { year: "2020-21", turnover: 470 },
-    { year: "2021-22", turnover: 204 },
-    { year: "2022-23", turnover: 192 },
+    { year: "2020-21", turnover: 332.58 },
+    { year: "2021-22", turnover: 191.98 },
+    { year: "2022-23", turnover: 204.76 },
+    { year: "2023-24", turnover: 533.09 },
+    { year: "2024-25", turnover: 606.42 },
   ];
 
   return (

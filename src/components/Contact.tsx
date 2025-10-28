@@ -37,7 +37,7 @@ const Contact = () => {
                 <Phone className="text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" size={20} />
                 <div>
                   <span>CONTACT PERSON: RAJIV SINGH</span><br />
-                  <span>Phone no: 9131998505, 9425173403</span>
+                  <span>Phone no: 8226008228, 9425173403</span>
                 </div>
               </div>
             </div>
@@ -58,7 +58,8 @@ const Contact = () => {
               <div className="flex items-start gap-2">
                 <Phone className="text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" size={20} />
                 <div>
-                  <span>CONTACT PERSON: ABHISHEK SINGH</span>
+                  <span>CONTACT PERSON: rajiv pratap singh</span><br/>
+                  <span>Phone no: 9425173403</span>
                 </div>
               </div>
             </div>
