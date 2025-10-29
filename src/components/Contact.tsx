@@ -26,9 +26,9 @@ const Contact = () => {
             <div className="flex flex-col gap-3 text-gray-600 dark:text-gray-400">
               <div className="flex items-start gap-2">
                 <MapPin className="text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" size={20} />
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=SHOP+NO-8,+NEAR+DHAWARI+STADIUM,+SATNA+(M.P)" 
-                  target="_blank" 
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=SHOP+NO-8,+NEAR+DHAWARI+STADIUM,+SATNA+(M.P)"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-indigo-600 dark:text-indigo-400 hover:underline"
                 >
@@ -61,9 +61,9 @@ const Contact = () => {
             <div className="flex flex-col gap-3 text-gray-600 dark:text-gray-400">
               <div className="flex items-start gap-2">
                 <MapPin className="text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" size={20} />
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=HIG-20+SADA+COLONY,+NTPC+DARRI,+KORBA+(C.G)" 
-                  target="_blank" 
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=HIG-20+SADA+COLONY,+NTPC+DARRI,+KORBA+(C.G)"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-indigo-600 dark:text-indigo-400 hover:underline"
                 >
@@ -74,9 +74,24 @@ const Contact = () => {
               <div className="flex items-start gap-2">
                 <Phone className="text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" size={20} />
                 <div>
-                  <span>CONTACT PERSON: rajiv pratap singh</span><br/>
+                  <span>CONTACT PERSON: rajiv pratap singh</span><br />
                   <span>Phone no: 9425173403</span>
                 </div>
+              </div>
+
+              {/* Download GST Button */}
+              <div className="mt-6">
+                <a
+                  href="/GST CERTIFICATE CG.pdf"
+                  download="GST CERTIFICATE CG.pdf"
+                  className="inline-flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 font-medium rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-md hover:shadow-lg"
+                  style={{ color: 'white' }}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                  Download GST Certificate
+                </a>
               </div>
             </div>
           </div>

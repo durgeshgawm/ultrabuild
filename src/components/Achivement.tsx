@@ -94,7 +94,7 @@ const Achivement = () => {
                   <div className="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center">
                     <FaPhone className="text-indigo-600 dark:text-indigo-400" />
                   </div>
-                  <span>9131998505, 9425173403</span>
+                  <span>8226008228, 9425173403</span>
                 </p>
                 <p className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center">
