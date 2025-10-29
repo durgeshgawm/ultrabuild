@@ -1,8 +1,8 @@
 import Clintimage from "../../components/Clintimage";
 
-export default function ClientsPage() {
+export default function ClintimagePage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen fade-in">
       <Clintimage />
     </div>
   );

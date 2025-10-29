@@ -41,7 +41,7 @@ const Gallery = () => {
   return (
     <section className="py-20 px-4 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Photo Gallery
           </h2>
@@ -49,16 +49,16 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 staggered-fade-in">
           {projects.map((project) => (
             <div 
               key={project.id}
-              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="group relative overflow-hidden rounded-2xl shadow-card hover-lift transition-all duration-300 aspect-square"
             >
-              <div className="relative w-full h-64">
+              <div className="relative w-full h-full">
                 <Image
                   src={project.image}
-                  alt={`$project`}
+                  alt={`Project ${project.id}`}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

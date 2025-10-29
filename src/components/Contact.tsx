@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-4 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Contact Us
           </h2>
@@ -16,9 +16,9 @@ const Contact = () => {
         </div>
 
         {/* Office Cards Side by Side */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 staggered-fade-in">
           {/* Registered Office */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-card hover-lift">
             <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
               Registered Office
             </h4>
@@ -26,12 +26,21 @@ const Contact = () => {
             <div className="flex flex-col gap-3 text-gray-600 dark:text-gray-400">
               <div className="flex items-start gap-2">
                 <MapPin className="text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" size={20} />
-                <span>SHOP NO-8, NEAR DHAWARI STADIUM<br />
-                SATNA (M.P)</span>
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=SHOP+NO-8,+NEAR+DHAWARI+STADIUM,+SATNA+(M.P)" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 dark:text-indigo-400 hover:underline"
+                >
+                  SHOP NO-8, NEAR DHAWARI STADIUM<br />
+                  SATNA (M.P)
+                </a>
               </div>
               <div className="flex items-start gap-2">
                 <Mail className="text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" size={20} />
-                <span>Email: ultrabuildsatna@gmail.com</span>
+                <a href="mailto:ultrabuildsatna@gmail.com" className="text-indigo-600 dark:text-indigo-400 hover:underline">
+                  ultrabuildsatna@gmail.com
+                </a>
               </div>
               <div className="flex items-start gap-2">
                 <Phone className="text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" size={20} />
@@ -44,7 +53,7 @@ const Contact = () => {
           </div>
 
           {/* Branch Office */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-card hover-lift">
             <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
               Branch Office
             </h4>
@@ -52,8 +61,15 @@ const Contact = () => {
             <div className="flex flex-col gap-3 text-gray-600 dark:text-gray-400">
               <div className="flex items-start gap-2">
                 <MapPin className="text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" size={20} />
-                <span>HIG-20 SADA COLONY, NTPC DARRI,<br />
-                KORBA (C.G)</span>
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=HIG-20+SADA+COLONY,+NTPC+DARRI,+KORBA+(C.G)" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 dark:text-indigo-400 hover:underline"
+                >
+                  HIG-20 SADA COLONY, NTPC DARRI,<br />
+                  KORBA (C.G)
+                </a>
               </div>
               <div className="flex items-start gap-2">
                 <Phone className="text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" size={20} />
