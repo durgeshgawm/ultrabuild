@@ -25,24 +25,25 @@ const Project: React.FC = () => {
     >
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16 fade-in">
+        <div className="text-center mb-12 fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             CURRENT & COMPLETED PROJECTS
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full"></div>
-          <p className="mt-6 text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full mb-6"></div>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-justify-better">
             Explore our diverse portfolio of successful projects across various sectors
           </p>
         </div>
 
         {/* Current Projects */}
-        <div className="mb-20 fade-in">
-          <div className="flex items-center mb-10">
+        <div className="mb-12 fade-in">
+          <div className="flex items-center mb-6">
             <h3 className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mr-4">
               Current Projects
             </h3>
             <div className="flex-1 h-px bg-gradient-to-r from-indigo-500 to-transparent"></div>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 staggered-fade-in">
             {currentProjects.map((project, index) => (
               <div
@@ -51,15 +52,19 @@ const Project: React.FC = () => {
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500 rounded-full -translate-y-16 translate-x-16 opacity-10"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-purple-500 rounded-full translate-y-12 -translate-x-12 opacity-10"></div>
+
                 <div className="relative z-10">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center mr-4">
                       <div className="w-3 h-3 rounded-full bg-indigo-500 animate-pulse"></div>
                     </div>
+
                     <div>
-                      <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                      {/* ✅ Updated Title */}
+                      <h4 className="text-sm font-normal text-gray-700 dark:text-gray-300 mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors text-justify-better">
                         {project.title}
                       </h4>
+
                       <div className="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-medium bg-indigo-50 dark:bg-indigo-900/30 px-4 py-2 rounded-full text-sm">
                         <span>In Progress</span>
                         <div className="w-2 h-2 bg-indigo-500 rounded-full ml-2 animate-pulse"></div>
@@ -73,13 +78,14 @@ const Project: React.FC = () => {
         </div>
 
         {/* Completed Projects */}
-        <div className="fade-in">
-          <div className="flex items-center mb-10">
+        <div className="mb-12 fade-in">
+          <div className="flex items-center mb-6">
             <h3 className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mr-4">
               Completed Projects
             </h3>
             <div className="flex-1 h-px bg-gradient-to-r from-indigo-500 to-transparent"></div>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 staggered-fade-in">
             {completedProjects.map((project, index) => (
               <div
@@ -88,6 +94,7 @@ const Project: React.FC = () => {
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-green-500 rounded-full -translate-y-16 translate-x-16 opacity-10"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-teal-500 rounded-full translate-y-12 -translate-x-12 opacity-10"></div>
+
                 <div className="relative z-10">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mr-4">
@@ -95,10 +102,13 @@ const Project: React.FC = () => {
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                     </div>
+
                     <div>
-                      <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                      {/* ✅ Updated Title */}
+                      <h4 className="text-sm font-normal text-gray-700 dark:text-gray-300 mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors text-justify-better">
                         {project.title}
                       </h4>
+
                       <div className="inline-flex items-center text-green-600 dark:text-green-400 font-medium bg-green-50 dark:bg-green-900/30 px-4 py-2 rounded-full text-sm">
                         <span>Completed</span>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">

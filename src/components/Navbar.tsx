@@ -1,22 +1,40 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
-  // Updated menu items with renamed links and smooth scrolling for home page sections
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuOpen]);
+
+  // Updated menu items - all navigate to individual pages
   const menuItems = [
-    { name: "History", href: "/about", id: "about" },
-    { name: "Profile", href: "/achievement", id: "achievement" },
-    { name: "Plant & Machinery", href: "/boardofdirectore", id: "boardofdirectore" },
-    { name: "Financial Data", href: "/clintimage", id: "financial" },
-    { name: "Project", href: "/project" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Contact", href: "/contact", id: "contact" },
+    { name: "History", href: "/about", isSection: false },
+    { name: "Profile", href: "/achievement", isSection: false },
+    { name: "Plant & Machinery", href: "/boardofdirectore", isSection: false },
+    { name: "Financial Data", href: "/clintimage", isSection: false },
+    { name: "Project", href: "/project", isSection: false },
+    { name: "Gallery", href: "/gallery", isSection: false },
+    { name: "Contact", href: "/contact", isSection: false },
   ];
 
   // Close menus when pathname changes
@@ -24,40 +42,12 @@ export default function Navbar() {
     setMenuOpen(false);
   }, [pathname]);
 
-  // Get active section from hash for home page
-  const [activeSection, setActiveSection] = useState("");
-  
-  useEffect(() => {
-    const handleHashChange = () => {
-      if (pathname === "/") {
-        const hash = window.location.hash.replace("#", "");
-        setActiveSection(hash);
-      }
-    };
-    
-    handleHashChange();
-    window.addEventListener("hashchange", handleHashChange);
-    return () => window.removeEventListener("hashchange", handleHashChange);
-  }, [pathname]);
-
   // Determine if we're on the home page
   const isHomePage = pathname === "/";
 
-  // Handle smooth scrolling for same-page navigation
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, id?: string) => {
-    // Only apply smooth scrolling on the home page for section links
-    if (isHomePage && id) {
-      e.preventDefault();
-      const element = document.getElementById(id);
-      if (element) {
-        window.scrollTo({
-          top: element.offsetTop - 80, // Adjust for navbar height
-          behavior: "smooth"
-        });
-        // Update URL hash without page reload
-        window.history.pushState(null, "", `#${id}`);
-      }
-    }
+  // Handle navigation for all pages
+  const handleNavigation = () => {
+    // No special handling needed since all items are page links now
   };
 
   return (
@@ -65,7 +55,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2 slide-in-left">
             <div className="w-10 h-10 rounded-lg bg-indigo-600 flex items-center justify-center">
               <span className="text-white font-bold text-xl">UB</span>
             </div>
@@ -75,22 +65,15 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-1 staggered-slide-top">
             {menuItems.map((item, i) => {
-              // For home page, check active section from hash
-              // For other pages, check direct pathname match
-              const isActive = isHomePage 
-                ? activeSection === item.id
-                : pathname === item.href;
-              
-              // Check if this is a section link that should use smooth scrolling
-              const isSectionLink = isHomePage && item.id;
+              // For all pages, check direct pathname match
+              const isActive = pathname === item.href || (pathname === '/' + item.href.slice(1) && item.href !== '/');
               
               return (
                 <Link
                   key={i}
-                  href={isSectionLink ? `/#${item.id}` : item.href}
-                  onClick={(e) => isSectionLink && handleSmoothScroll(e, item.id)}
+                  href={item.href}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative ${
                     isActive
                       ? "text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/30"
@@ -109,7 +92,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
+            className="md:hidden p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none slide-in-right"
           >
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -118,27 +101,16 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg border-t border-gray-200 dark:border-gray-700">
-          <div className="flex flex-col py-4 max-h-[calc(100vh-5rem)] overflow-y-auto">
+        <div ref={mobileMenuRef} className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg border-t border-gray-200 dark:border-gray-700">
+          <div className="flex flex-col py-4 max-h-[calc(100vh-5rem)] overflow-y-auto staggered-slide-left">
             {menuItems.map((item, i) => {
-              // For home page, check active section from hash
-              // For other pages, check direct pathname match
-              const isActive = isHomePage 
-                ? activeSection === item.id
-                : pathname === item.href;
-              
-              // Check if this is a section link that should use smooth scrolling
-              const isSectionLink = isHomePage && item.id;
+              // For all pages, check direct pathname match
+              const isActive = pathname === item.href || (pathname === '/' + item.href.slice(1) && item.href !== '/');
               
               return (
                 <Link
                   key={i}
-                  href={isSectionLink ? `/#${item.id}` : item.href}
-                  onClick={(e) => {
-                    if (isSectionLink) {
-                      handleSmoothScroll(e, item.id);
-                    }
-                  }}
+                  href={item.href}
                   className={`px-6 py-3 text-sm font-medium transition-colors relative ${
                     isActive
                       ? "text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-gray-800"

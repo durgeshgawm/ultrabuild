@@ -1,7 +1,7 @@
 import React from "react";
 import { FaChartLine, FaRupeeSign } from "react-icons/fa";
 
-const Clintimage = () => {
+const FinancialData = () => {
   const financialData = [
     { year: "2014-15", turnover: 198 },
     { year: "2015-16", turnover: 442 },
@@ -23,8 +23,8 @@ const Clintimage = () => {
     <section id="financial" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16 fade-in">
-          <div className="flex justify-center mb-6">
+        <div className="text-center mb-12 fade-in">
+          <div className="flex justify-center mb-4">
             <div className="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
               <FaChartLine className="text-white text-2xl" />
             </div>
@@ -32,8 +32,8 @@ const Clintimage = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             FINANCIAL DATA
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full"></div>
-          <p className="mt-6 text-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full mb-6"></div>
+          <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto text-justify-better">
             With constant increase in its turnover, Ultra Build has set its pace for regular upward growth in the years to come. The proof of UB&apos;s constant commitment to progress is as below:
           </p>
         </div>
@@ -98,4 +98,4 @@ const Clintimage = () => {
   );
 };
 
-export default Clintimage;
+export default FinancialData;

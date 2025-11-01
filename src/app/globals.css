@@ -93,6 +93,50 @@ main {
   animation: fadeIn 0.6s ease-out forwards;
 }
 
+/* Scroll-triggered animations */
+/* These rules hide elements until they are scrolled into view */
+main .slide-in-top:not(.slide-in-top-animate),
+main .slide-in-left:not(.slide-in-left-animate),
+main .slide-in-right:not(.slide-in-right-animate),
+main .slide-in-bottom:not(.slide-in-bottom-animate) {
+  opacity: 0;
+}
+
+/* These rules show the animations when the animate class is added */
+main .slide-in-top.slide-in-top-animate {
+  animation: slideInTop 0.6s ease-out forwards;
+}
+
+main .slide-in-left.slide-in-left-animate {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+main .slide-in-right.slide-in-right-animate {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+main .slide-in-bottom.slide-in-bottom-animate {
+  animation: slideInBottom 0.6s ease-out forwards;
+}
+
+/* Direct animations (for individual pages) */
+/* These animations play immediately when the page loads */
+.slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+.slide-in-top {
+  animation: slideInTop 0.6s ease-out forwards;
+}
+
+.slide-in-bottom {
+  animation: slideInBottom 0.6s ease-out forwards;
+}
+
 /* Slide in from left */
 @keyframes slideInLeft {
   from {
@@ -103,10 +147,6 @@ main {
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-.slide-in-left {
-  animation: slideInLeft 0.6s ease-out forwards;
 }
 
 /* Slide in from right */
@@ -121,10 +161,6 @@ main {
   }
 }
 
-.slide-in-right {
-  animation: slideInRight 0.6s ease-out forwards;
-}
-
 /* Slide in from top */
 @keyframes slideInTop {
   from {
@@ -137,10 +173,6 @@ main {
   }
 }
 
-.slide-in-top {
-  animation: slideInTop 0.6s ease-out forwards;
-}
-
 /* Slide in from bottom */
 @keyframes slideInBottom {
   from {
@@ -151,10 +183,6 @@ main {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.slide-in-bottom {
-  animation: slideInBottom 0.6s ease-out forwards;
 }
 
 /* Staggered animations for lists */
@@ -207,6 +235,40 @@ main {
 .staggered-slide-right > *:nth-child(8) { animation-delay: 0.8s; }
 .staggered-slide-right > *:nth-child(9) { animation-delay: 0.9s; }
 .staggered-slide-right > *:nth-child(10) { animation-delay: 1.0s; }
+
+/* Staggered slide in from top */
+.staggered-slide-top > * {
+  opacity: 0;
+  animation: slideInTop 0.6s ease-out forwards;
+}
+
+.staggered-slide-top > *:nth-child(1) { animation-delay: 0.1s; }
+.staggered-slide-top > *:nth-child(2) { animation-delay: 0.2s; }
+.staggered-slide-top > *:nth-child(3) { animation-delay: 0.3s; }
+.staggered-slide-top > *:nth-child(4) { animation-delay: 0.4s; }
+.staggered-slide-top > *:nth-child(5) { animation-delay: 0.5s; }
+.staggered-slide-top > *:nth-child(6) { animation-delay: 0.6s; }
+.staggered-slide-top > *:nth-child(7) { animation-delay: 0.7s; }
+.staggered-slide-top > *:nth-child(8) { animation-delay: 0.8s; }
+.staggered-slide-top > *:nth-child(9) { animation-delay: 0.9s; }
+.staggered-slide-top > *:nth-child(10) { animation-delay: 1.0s; }
+
+/* Staggered slide in from bottom */
+.staggered-slide-bottom > * {
+  opacity: 0;
+  animation: slideInBottom 0.6s ease-out forwards;
+}
+
+.staggered-slide-bottom > *:nth-child(1) { animation-delay: 0.1s; }
+.staggered-slide-bottom > *:nth-child(2) { animation-delay: 0.2s; }
+.staggered-slide-bottom > *:nth-child(3) { animation-delay: 0.3s; }
+.staggered-slide-bottom > *:nth-child(4) { animation-delay: 0.4s; }
+.staggered-slide-bottom > *:nth-child(5) { animation-delay: 0.5s; }
+.staggered-slide-bottom > *:nth-child(6) { animation-delay: 0.6s; }
+.staggered-slide-bottom > *:nth-child(7) { animation-delay: 0.7s; }
+.staggered-slide-bottom > *:nth-child(8) { animation-delay: 0.8s; }
+.staggered-slide-bottom > *:nth-child(9) { animation-delay: 0.9s; }
+.staggered-slide-bottom > *:nth-child(10) { animation-delay: 1.0s; }
 
 /* Text typing animation */
 @keyframes typing {
@@ -277,6 +339,14 @@ main {
 
 .shadow-card:hover {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@layer utilities {
+  .text-justify-better {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+  }
 }
 
 /* -------------------------------

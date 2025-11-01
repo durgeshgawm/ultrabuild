@@ -5,12 +5,12 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-4 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 fade-in">
+        <div className="text-center mb-12 fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Contact Us
           </h2>
-          <div className="w-24 h-1 bg-indigo-600 mx-auto rounded"></div>
-          <p className="mt-6 text-xl text-gray-600 dark:text-gray-300">
+          <div className="w-24 h-1 bg-indigo-600 mx-auto rounded mb-6"></div>
+          <p className="text-xl text-gray-600 dark:text-gray-300 text-justify-better">
             Get in touch with our team for any inquiries or project discussions.
           </p>
         </div>
@@ -45,7 +45,7 @@ const Contact = () => {
               <div className="flex items-start gap-2">
                 <Phone className="text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" size={20} />
                 <div>
-                  <span>CONTACT PERSON: RAJIV SINGH</span><br />
+                  <span>CONTACT PERSON: Rajiv Singh</span><br />
                   <span>Phone no: 8226008228, 9425173403</span>
                 </div>
               </div>
@@ -74,7 +74,7 @@ const Contact = () => {
               <div className="flex items-start gap-2">
                 <Phone className="text-indigo-600 dark:text-indigo-400 mt-1 flex-shrink-0" size={20} />
                 <div>
-                  <span>CONTACT PERSON: rajiv pratap singh</span><br />
+                  <span>CONTACT PERSON: Rajiv Pratap Singh</span><br />
                   <span>Phone no: 9425173403</span>
                 </div>
               </div>
