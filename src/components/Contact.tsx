@@ -70,8 +70,7 @@ const Contact = () => {
                 <div>
                   <h4 className="text-xl font-bold mb-2">Regional Office</h4>
                   <p className="text-slate-300 leading-relaxed">
-                    HIG-20 SADA Colony, NTPC Darri,<br />
-                    Korba (C.G)
+                    HIG-20 SADA COLONY, NTPC DARRI, <br /> KORBA (C.G)
                   </p>
                 </div>
               </div>
