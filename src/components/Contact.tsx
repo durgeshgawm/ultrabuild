@@ -59,10 +59,10 @@ const Contact = () => {
                 <div>
                   <h4 className="text-xl font-bold mb-2">Head Office</h4>
                   <p className="text-slate-300 leading-relaxed">
-                    SHOP NO. 08 DHAWARI STEDIUM,<br />
-                    SATNA (M.P) 485001 <br />
-                    Register Office:- OM TOWER, BANDAN BANK BUILDING,<br /> SECOND FLOOR, KRISHNA NAGAR SATNA M.P
-
+                    REGISTERED ADDRESS:- SHOP NO.
+                    <br />08 DHAWARI STEDIUM, SATNA (M.P) 485001
+                    <br />
+                    OFFICE ADDRESS:- OM TOWER, BANDAN BANK <br /> BUILDING, SECOND FLOOR, KRISHNA NAGAR SATNA M.P
                   </p>
                 </div>
               </div>
