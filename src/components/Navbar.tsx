@@ -74,7 +74,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-slate-900 to-slate-700 dark:from-white dark:to-slate-200 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
-              <span className="text-white dark:text-slate-900 font-bold text-xl">U</span>
+              <span className="text-white dark:text-slate-900 font-bold text-xl">UB</span>
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold font-serif tracking-tight text-slate-900 dark:text-white leading-none group-hover:text-accent transition-colors duration-300">
