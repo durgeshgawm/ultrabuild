@@ -61,7 +61,7 @@ const Contact = () => {
                   <p className="text-slate-300 leading-relaxed">
                     SHOP NO. 08 DHAWARI STEDIUM,<br />
                     SATNA (M.P) 485001 <br />
-                    OM TOWER, BANDAN BANK BUILDING,<br /> SECOND FLOOR, KRISHNA NAGAR SATNA M.P
+                    Register Office:- OM TOWER, BANDAN BANK BUILDING,<br /> SECOND FLOOR, KRISHNA NAGAR SATNA M.P
 
                   </p>
                 </div>
