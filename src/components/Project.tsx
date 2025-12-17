@@ -7,29 +7,29 @@ const Project: React.FC = () => {
       title: "West-Central Railway Residential Complex",
       location: "Karhi Village, Satna",
       client: "West-Central Railway",
-      desc: "Construction of Residential Quarters at Karhi Village, District Satna."
+      desc: "Construction Of Residential Quarters At Karhi Village, District Satna."
     },
     {
       title: "Ballast Aggregates Supply Chain",
       location: "Vedanta Balco Site, Chhattisgarh",
       client: "Railway Works",
-      desc: "Procurement, staffing, and transportation of ballast aggregates from crusher to site."
+      desc: "Procurement, Staffing, And Transportation Of Ballast Aggregates From Crusher To Site."
     },
     {
       title: "Civil Structural Works @ BHEL-NTPC",
       location: "Korba, Chhattisgarh",
       client: "BHEL – NTPC",
-      desc: "Shuttering, steel bending, binding, concrete pouring, and manpower supply."
+      desc: "Shuttering, Steel Bending, Binding, Concrete Pouring, And Manpower Supply."
     },
   ];
 
   const completedProjects = [
-    { title: "Structural Fabrication & Erection", location: "Maihar, Satna", client: "Reliance Cement Pvt Ltd", desc: "Construction of small structures and allied works." },
-    { title: "Box Culvert Construction", location: "Singrauli, MP", client: "BGR Group (Northern Coalfield Ltd)", desc: "Construction of Box Culvert at Gorbi Mines." },
-    { title: "Railway Gauge Conversion Works", location: "Shikara Station, Seoni", client: "SECR (Nagpur Division)", desc: "Bridges, box culverts, and drains for narrow to broad gauge conversion." },
-    { title: "S&T Building Construction", location: "Singrauli, MP", client: "M/s MBPL (RITES/NTPC)", desc: "Construction of S&T building at Nigahi and Dudhichua." },
-    { title: "Railway Formation & Bridges", location: "Gorbi Mines", client: "M/s MBPL (RITES)", desc: "Earthwork in formation, bridges, P-way and other allied works." },
-    { title: "Track Ballast Supply", location: "Amlohri & Nigahi Mines", client: "Kalpataru Transmission Ltd", desc: "Supply of 2000 cum Track Ballast." },
+    { title: "Structural Fabrication & Erection Work - 2.23Cr", location: "Maihar, Satna", client: "Reliance Cement Pvt Ltd", desc: "Construction Of Small Structures And Allied Works." },
+    { title: "Box Culvert Cons. - 1.25 Cr", location: "Singrauli, MP", client: "BGR Group (Northern Coalfield Ltd)", desc: "Construction Of Box Culvert At Gorbi Mines." },
+    { title: "Railway Gauge - 2.25 Cr", location: "Shikara Station, Seoni", client: "SECR (Nagpur Division)", desc: "Bridges, Box Culverts, And Drains For Narrow To Broad Gauge Conversion." },
+    { title: "S & T Building - 1.90 Cr", location: "Singrauli, MP", client: "M/s MBPL (RITES/NTPC)", desc: "Construction Of S&T Building At Nigahi And Dudhichua." },
+    { title: "Railway Bridge - 2.24 Cr", location: "Gorbi Mines", client: "M/s MBPL (RITES)", desc: "Earthwork In Formation, Bridges, P-way And Other Allied Works." },
+    { title: "Construction Of Roadbed, Major & Minor Bridges And Track Linking Work At Jabalpur Division - 80 Lac", location: "Jabalpur Division", client: "West Central Railway In M.P", desc: "Construction Of Roadbed, Major & Minor Bridges And Track Linking Work." },
   ];
 
   return (
@@ -43,7 +43,7 @@ const Project: React.FC = () => {
           </h2>
           <div className="w-16 md:w-24 h-1.5 bg-accent rounded-full mx-auto mb-6 md:mb-8"></div>
           <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto font-light">
-            delivering excellence across residential, industrial, and infrastructure sectors.
+            Delivering Excellence Across Residential, Industrial, And Infrastructure Sectors.
           </p>
         </div>
 
@@ -127,7 +127,7 @@ const Project: React.FC = () => {
 
                   <div className="mt-4 flex items-center text-xs text-slate-400">
                     <span className="w-2 h-2 rounded-full bg-green-500 mr-2"></span>
-                    Successfully Delivered
+                    Successfully Completed
                   </div>
                 </div>
               </div>

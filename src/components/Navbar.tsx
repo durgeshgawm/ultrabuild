@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
@@ -73,8 +74,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
-              <span className="text-white dark:text-slate-900 font-bold text-xl font-serif">UB</span>
+            <div className="w-10 h-10 rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition-transform duration-300">
+              <Image
+                src="/favicoun-logo.jpg"
+                alt="UltraBuild Logo"
+                width={40}
+                height={40}
+                className="object-cover"
+              />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold font-serif tracking-tight text-slate-900 dark:text-white leading-none group-hover:text-accent transition-colors duration-300">

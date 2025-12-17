@@ -11,7 +11,7 @@ const BoardoffDirectore = () => {
     {
       title: "Excavation Fleet",
       icon: <Truck className="w-6 h-6" />,
-      items: ["Tata 220 Zaxis Excavators (2)", "R210 Hydraulic Excavator", "Tractor Leveler & Dozer"]
+      items: ["Tata 220 Zaxis Excavators (2)", "R210 Hydraulic Excavator", "Tractor Leveler & Dozer", "3DXS5 JCB Machine"]
     },
     {
       title: "Logistics & Mixing",
@@ -41,7 +41,7 @@ const BoardoffDirectore = () => {
           </h2>
           <div className="w-16 md:w-24 h-1.5 bg-accent rounded-full mx-auto mb-6 md:mb-8"></div>
           <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto font-light">
-            Equipped with state-of-the-art machinery to deliver projects with speed and precision.
+            Equipped With State-Of-The-Art Machinery To Deliver Projects With Speed And Precision.
           </p>
         </div>
 

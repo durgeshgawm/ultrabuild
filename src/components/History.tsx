@@ -21,7 +21,7 @@ const About = () => {
               <div className="w-16 md:w-24 h-1.5 bg-accent rounded-full mb-8 mx-auto lg:mx-0"></div>
 
               <p className="text-slate-600 dark:text-slate-300 mb-6 text-lg leading-relaxed text-justify-better">
-                <span className="font-semibold text-slate-800 dark:text-slate-100">ULTRABUILD</span> began its journey as a premier civil and mechanical contractor.
+                <span className="font-semibold text-slate-800 dark:text-slate-100">ULTRABUILD</span> began its journey as a premier civil contractor.
                 Over the last decade, we have mastered the art of executing complex engineering challenges, delivering excellence in design-build solutions and project management.
               </p>
 

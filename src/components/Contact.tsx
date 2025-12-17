@@ -51,20 +51,20 @@ const Contact = () => {
 
             <div className="space-y-8">
               <div className="flex items-start group">
-                <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center mr-6 group-hover:bg-accent transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-accent backdrop-blur-sm flex items-center justify-center mr-6 group-hover:bg-black transition-colors">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold mb-2">Head Office</h4>
                   <p className="text-slate-300 leading-relaxed">
-                    Shop No-8, Near Dhawari Stadium,<br />
-                    Satna (M.P)
+                    Om Tower, Bandhan Bank Building,<br />
+                    Second Floor, Krishna Nagar Satna M.P
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start group">
-                <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center mr-6 group-hover:bg-accent transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-accent backdrop-blur-sm flex items-center justify-center mr-6 group-hover:bg-black transition-colors">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -77,14 +77,14 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start group">
-                <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center mr-6 group-hover:bg-accent transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-accent backdrop-blur-sm flex items-center justify-center mr-6 group-hover:bg-black transition-colors">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold mb-2">Call Us</h4>
                   <p className="text-slate-300">
-                    +91 82260 08228<br />
-                    +91 94251 73403
+                    +91 94251 73403<br />
+                    +91 91094 97077
                   </p>
                 </div>
               </div>

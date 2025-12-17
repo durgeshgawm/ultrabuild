@@ -28,7 +28,7 @@ const Achivement = () => {
                 <h3 className="text-2xl font-serif font-bold text-slate-900 dark:text-white">Our Vision</h3>
               </div>
               <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
-                To be a leading construction firm recognized for excellence, innovation, and integrity — building a better tomorrow through sustainable and high-quality infrastructure.
+                To Be A Leading Construction Firm Recognized For Excellence, Innovation, And Integrity — Building A Better Tomorrow Through Sustainable And High-Quality Infrastructure.
               </p>
             </div>
           </div>
@@ -46,10 +46,10 @@ const Achivement = () => {
               </div>
               <ul className="space-y-3">
                 {[
-                  "Ensuring quality workmanship and timely completion.",
-                  "Maintaining the highest standards of safety and professionalism.",
-                  "Continuously improving through modern technology.",
-                  "Building long-term relationships through trust."
+                  "Ensuring Quality Workmanship And Timely Completion.",
+                  "Maintaining The Highest Standards Of Safety And Professionalism.",
+                  "Continuously Improving Through Modern Technology.",
+                  "Building Long-Term Relationships Through Trust."
                 ].map((item, i) => (
                   <li key={i} className="flex items-start text-slate-600 dark:text-slate-300">
                     <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2.5 mr-3 flex-shrink-0"></span>
@@ -104,7 +104,7 @@ const Achivement = () => {
                     <p className="text-slate-900 dark:text-white font-mono">23AAEFU0292Q1ZT</p>
                   </div>
                   <p className="text-slate-600 dark:text-slate-300 text-sm">
-                    Shop No.8 Near Sai Temple, Dhawari, Satna (MP)
+                    Om Tower, Bandhan Bank Building, Second Floor, Krishna Nagar Satna M.P
                   </p>
                 </div>
               </div>
@@ -113,7 +113,11 @@ const Achivement = () => {
                 <h4 className="flex items-center text-lg font-bold text-slate-900 dark:text-white mb-4">
                   <MapPin className="w-5 h-5 text-accent mr-2" /> Regional Office (Korba)
                 </h4>
-                <div className="pl-7">
+                <div className="pl-7 space-y-3">
+                  <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+                    <p className="text-sm text-slate-500 uppercase font-bold mb-1">GSTIN</p>
+                    <p className="text-slate-900 dark:text-white font-mono">22AAEFU0292Q1ZV</p>
+                  </div>
                   <p className="text-slate-600 dark:text-slate-300 text-sm">
                     HIG-20 SADA COLONY, NTPC DARRI, KORBA (C.G)
                   </p>
@@ -128,7 +132,7 @@ const Achivement = () => {
                   <Building2 className="w-5 h-5 text-accent mr-2" /> Core Activities
                 </h4>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed pl-7">
-                  General Civil and Mechanical works mainly in Cement and Power Plants, Indian Railway specialized in Bridge construction, P-way, Erection and Fabrication of Girders, Supply items, Earthwork, and other allied works.
+                  General Civil Works Mainly In Cement And Power Plants, Indian Railway Specialized In Bridge Construction, P-way, Erection And Fabrication Of Girders, Supply Items, Earthwork, And Other Allied Works.
                 </p>
               </div>
 
@@ -154,11 +158,31 @@ const Achivement = () => {
                 </h4>
                 <div className="pl-7 space-y-2">
                   <p className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
-                    <span>8226008228, 9425173403</span>
+                    <span>9425173403, 9109497077</span>
                   </p>
                   <p className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
                     <Mail className="w-4 h-4" /> ultrabuildsatna@gmail.com
                   </p>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="flex items-center text-lg font-bold text-slate-900 dark:text-white mb-4">
+                  <Users className="w-5 h-5 text-accent mr-2" /> Key Personnel
+                </h4>
+                <div className="pl-7 space-y-4">
+                  <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+                    <p className="font-bold text-slate-900 dark:text-white">Peetam Bajaj</p>
+                    <p className="text-xs text-slate-500 uppercase mt-1">Accountant</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">Mobile: 9109497077</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-300">Email: pritambajaj996@gmail.com</p>
+                  </div>
+                  <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+                    <p className="font-bold text-slate-900 dark:text-white">Shivkumar Vishwakarma</p>
+                    <p className="text-xs text-slate-500 uppercase mt-1">Accountant</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">Mobile: 8817851101</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-300">Email: shivkumarvishwakarma1974@gmail.com</p>
+                  </div>
                 </div>
               </div>
             </div>
