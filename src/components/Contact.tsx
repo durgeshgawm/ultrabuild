@@ -62,6 +62,7 @@ const Contact = () => {
                     REGISTERED ADDRESS:- SHOP NO.
                     <br />08 DHAWARI STEDIUM, SATNA (M.P) 485001
                     <br />
+                    <br />
                     OFFICE ADDRESS:- OM TOWER, BANDAN BANK <br /> BUILDING, SECOND FLOOR, KRISHNA NAGAR SATNA M.P
                   </p>
                 </div>
