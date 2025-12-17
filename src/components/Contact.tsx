@@ -55,10 +55,10 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold mb-2">Head Office</h4>
+                  <h4 className="text-xl font-bold mb-2">Registier Office</h4>
                   <p className="text-slate-300 leading-relaxed">
-                    OM TOWER, BANDHAN BANK BUILDING,<br />
-                    SECOND FLOOR, KRISHNA NAGAR SATNA M.P
+                    SHOP NO. 08 DHAWARI STEDIUM,<br />
+                    SATNA (M.P) 485001
                   </p>
                 </div>
               </div>
