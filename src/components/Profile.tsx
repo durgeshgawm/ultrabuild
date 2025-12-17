@@ -104,7 +104,10 @@ const Achivement = () => {
                     <p className="text-slate-900 dark:text-white font-mono">23AAEFU0292Q1ZT</p>
                   </div>
                   <p className="text-slate-600 dark:text-slate-300 text-sm">
-                    Om Tower, Bandhan Bank Building, Second Floor, Krishna Nagar Satna M.P
+                    OFFICE ADDRESS:- OM TOWER, BANDAN BANK BUILDING, SECOND FLOOR, KRISHNA NAGAR SATNA M.P
+                  </p>
+                  <p className="text-slate-600 dark:text-slate-300 text-sm">
+                    REGISTERED ADDRESS:- SHOP NO. 08 DHAWARI STEDIUM, SATNA (M.P) 485001
                   </p>
                 </div>
               </div>
@@ -166,25 +169,6 @@ const Achivement = () => {
                 </div>
               </div>
 
-              <div>
-                <h4 className="flex items-center text-lg font-bold text-slate-900 dark:text-white mb-4">
-                  <Users className="w-5 h-5 text-accent mr-2" /> Key Personnel
-                </h4>
-                <div className="pl-7 space-y-4">
-                  <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
-                    <p className="font-bold text-slate-900 dark:text-white">Peetam Bajaj</p>
-                    <p className="text-xs text-slate-500 uppercase mt-1">Accountant</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">Mobile: 9109497077</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-300">Email: pritambajaj996@gmail.com</p>
-                  </div>
-                  <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
-                    <p className="font-bold text-slate-900 dark:text-white">Shivkumar Vishwakarma</p>
-                    <p className="text-xs text-slate-500 uppercase mt-1">Accountant</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">Mobile: 8817851101</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-300">Email: shivkumarvishwakarma1974@gmail.com</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

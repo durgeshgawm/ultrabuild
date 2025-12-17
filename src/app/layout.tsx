@@ -6,11 +6,7 @@ export const metadata: Metadata = {
   title: "UltraBuild Satna | Leading Construction Company",
   description: "Official website of UltraBuild Satna — Building the future with excellence in construction and infrastructure development.",
   icons: {
-    icon: [
-      { url: '/favicoun-logo.jpg', sizes: '32x32', type: 'image/jpeg' },
-      { url: '/favicoun-logo.jpg', sizes: '16x16', type: 'image/jpeg' },
-    ],
-    apple: '/favicoun-logo.jpg',
+    icon: '/favicon.ico',
   },
 };
 

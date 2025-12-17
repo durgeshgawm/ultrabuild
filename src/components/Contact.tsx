@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MapPin, Phone, Mail, Send, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Send, MessageCircle, Users } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -57,8 +57,8 @@ const Contact = () => {
                 <div>
                   <h4 className="text-xl font-bold mb-2">Head Office</h4>
                   <p className="text-slate-300 leading-relaxed">
-                    Om Tower, Bandhan Bank Building,<br />
-                    Second Floor, Krishna Nagar Satna M.P
+                    OM TOWER, BANDHAN BANK BUILDING,<br />
+                    SECOND FLOOR, KRISHNA NAGAR SATNA M.P
                   </p>
                 </div>
               </div>
@@ -150,6 +150,29 @@ const Contact = () => {
                 Send via Email <Send className="w-5 h-5" />
               </button>
             </form>
+          </div>
+        </div>
+
+        {/* Key Personnel Section */}
+        <div className="mt-16 max-w-4xl mx-auto">
+          <div className="bg-white dark:bg-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl">
+            <h4 className="flex items-center text-lg font-bold text-slate-900 dark:text-white mb-6">
+              <Users className="w-5 h-5 text-accent mr-2" /> Key person's
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+                <p className="font-bold text-slate-900 dark:text-white">Peetam Bajaj</p>
+                <p className="text-xs text-slate-500 uppercase mt-1">Accountant</p>
+                <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">Mobile: 9109497077</p>
+                <p className="text-sm text-slate-600 dark:text-slate-300">Email: pritambajaj996@gmail.com</p>
+              </div>
+              <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+                <p className="font-bold text-slate-900 dark:text-white">Shivkumar Vishwakarma</p>
+                <p className="text-xs text-slate-500 uppercase mt-1">Accountant</p>
+                <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">Mobile: 8817851101</p>
+                <p className="text-sm text-slate-600 dark:text-slate-300">Email: shivkumarvishwakarma1974@gmail.com</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

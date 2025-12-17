@@ -5,27 +5,28 @@
    Global Theme Colors & Settings
 -------------------------------- */
 :root {
-  /* Premium Palette - Deep Navy, Slate, Gold */
-  --background: #f8fafc;
-  /* Slate-50 */
+  /* Premium Palette - Enhanced Light Theme */
+  --background: #f5f5f4;
+  /* Warm off-white - Stone-100 */
   --foreground: #0f172a;
   /* Slate-900 */
 
   --primary: #0f172a;
   /* Slate-900 */
-  --secondary: #475569;
-  /* Slate-600 */
+  --secondary: #44403c;
+  /* Stone-700 for better contrast */
   --accent: #d97706;
   /* Amber-600 */
-  --accent-light: #fbbf24;
-  /* Amber-400 */
+  --accent-light: #f59e0b;
+  /* Amber-500 */
 
-  --surface: #ffffff;
-  --surface-alt: #f1f5f9;
-  /* Slate-100 */
+  --surface: #fafaf9;
+  /* Subtle warm white - Stone-50 */
+  --surface-alt: #e7e5e4;
+  /* Stone-200 for better definition */
 
-  --border: #e2e8f0;
-  /* Slate-200 */
+  --border: #d6d3d1;
+  /* Stone-300 for improved visibility */
 }
 
 @theme inline {

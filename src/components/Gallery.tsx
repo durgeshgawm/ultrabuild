@@ -17,7 +17,8 @@ const Gallery = () => {
   const clientImages = [
     { id: 1, image: "/clintimage1.jpg", name: "Client 1" },
     { id: 2, image: "/clintimage2.jpg", name: "Client 2" },
-    { id: 3, image: "/clintimage3.jpg", name: "Client 3" }
+    { id: 3, image: "/clintimage3.jpg", name: "Client 3" },
+    { id: 4, image: "/favicoun-logo.jpg", name: "UltraBuild" }
   ];
 
   return (
