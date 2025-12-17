@@ -51,17 +51,6 @@ const Contact = () => {
 
             <div className="space-y-8">
 
-              <div className="flex items-start group">
-                <div className="w-12 h-12 rounded-xl bg-accent backdrop-blur-sm flex items-center justify-center mr-6 group-hover:bg-black transition-colors">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold mb-2">Register Office</h4>
-                  <p className="text-slate-300 leading-relaxed">
-                    OM TOWER, BANDAN BANK BUILDING,<br /> SECOND FLOOR, KRISHNA NAGAR SATNA M.P
-                  </p>
-                </div>
-              </div>
 
               <div className="flex items-start group">
                 <div className="w-12 h-12 rounded-xl bg-accent backdrop-blur-sm flex items-center justify-center mr-6 group-hover:bg-black transition-colors">
@@ -71,7 +60,9 @@ const Contact = () => {
                   <h4 className="text-xl font-bold mb-2">Head Office</h4>
                   <p className="text-slate-300 leading-relaxed">
                     SHOP NO. 08 DHAWARI STEDIUM,<br />
-                    SATNA (M.P) 485001
+                    SATNA (M.P) 485001 <br />
+                    OM TOWER, BANDAN BANK BUILDING,<br /> SECOND FLOOR, KRISHNA NAGAR SATNA M.P
+
                   </p>
                 </div>
               </div>

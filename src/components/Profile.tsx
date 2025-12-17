@@ -104,10 +104,10 @@ const Achivement = () => {
                     <p className="text-slate-900 dark:text-white font-mono">23AAEFU0292Q1ZT</p>
                   </div>
                   <p className="text-slate-600 dark:text-slate-300 text-sm">
-                    OFFICE ADDRESS:- OM TOWER, BANDAN BANK BUILDING, SECOND FLOOR, KRISHNA NAGAR SATNA M.P
+                    REGISTERED ADDRESS:- SHOP NO. 08 DHAWARI STEDIUM, SATNA (M.P) 485001
                   </p>
                   <p className="text-slate-600 dark:text-slate-300 text-sm">
-                    REGISTERED ADDRESS:- SHOP NO. 08 DHAWARI STEDIUM, SATNA (M.P) 485001
+                    OFFICE ADDRESS:- OM TOWER, BANDAN BANK BUILDING, SECOND FLOOR, KRISHNA NAGAR SATNA M.P
                   </p>
                 </div>
               </div>
