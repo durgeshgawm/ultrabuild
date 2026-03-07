@@ -58,7 +58,7 @@ const ManagingDirector = () => {
                                 Managing Director
                             </p>
                             <p className="text-accent font-semibold text-sm uppercase tracking-wider">
-                                Ultra Build
+                                Rajiv Pratap Singh
                             </p>
                         </div>
                     </div>
